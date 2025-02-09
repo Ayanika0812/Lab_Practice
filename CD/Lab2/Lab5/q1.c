@@ -123,7 +123,7 @@ void L() {
 int main() {
     printf("Enter String: ");
     scanf("%s", str);
-    strcat(str, "$'); // Ensure end marker
+    strcat(str, "$"); // Ensure end marker
 
     curr = 0;
     S1(); // For Grammar 1
