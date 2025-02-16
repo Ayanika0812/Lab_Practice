@@ -1,0 +1,8 @@
+int main() {
+    int a = 10, b = 20;
+    float c = 3.14;
+    if (a > b && b != c) {
+        printf("Hello, World!");
+    }
+    return 0;
+}
