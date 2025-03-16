@@ -1,0 +1,54 @@
+bison -d parser.y
+flex lexer.l
+gcc lex.yy.c parser.tab.c -o parser -lm
+./parser
+
+
+
+Example Inputs & Outputs
+Valid Declaration Statements
+cpp
+Copy
+Edit
+int x;
+float y = 10;
+Output:
+
+pgsql
+Copy
+Edit
+Valid Declaration Statement
+Valid Declaration Statement
+Valid Decision Making Statements
+scss
+Copy
+Edit
+if (x > 10) { }
+while (y < 100) { }
+Output:
+
+pgsql
+Copy
+Edit
+Valid Decision-Making Statement
+Valid Decision-Making Statement
+Arithmetic Expressions
+Copy
+Edit
+5 + 3 * 2
+Output:
+
+makefile
+Copy
+Edit
+Result: 11
+Postfix Notation
+Copy
+Edit
+5 3 + 2 *
+Output:
+
+mathematica
+Copy
+Edit
+Valid Postfix Expression
