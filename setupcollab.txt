@@ -1,0 +1,10 @@
+
+!nvidia-smi
+!nvcc --version
+!pip install nvcc4jupyter
+%load_ext nvcc4jupyter
+
+%%writefile cuda_example.cu
+!nvcc -arch=sm_75 cuda_example.cu -o cuda_example
+!./cuda_example
+
